@@ -1,0 +1,120 @@
+/* Container styles */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.reorder {
+  padding: 20px 20px;
+  background-color: #6087A1;
+  border: 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Modal styles */
+.modalContent {
+  text-align: left;
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+
+.modalOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  opacity: 1;
+  animation: show .5s ease;
+  overflowX: hidden;
+  overflowY: auto;
+}
+
+.modal {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+.listItemDraggingOver,
+.listItem {
+  padding: 10px;
+  transition: background-color 0.2s ease;
+  flex-grow: 1;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.listItemDraggingOver {
+  background-color: #C5ECFF;
+}
+
+.listItem {
+  background-color: #ACD3ED;
+}
+
+.modalTitle {
+  text-align: center;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.submit,
+.cancel {
+  padding: 20px 20px;
+  background-color: #6087A1;
+  border: 0;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Metric table styles */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 500px;
+}
+
+th {
+  color: white;
+  background-color: #11749E;
+  padding: 12px 12px;
+  text-align: center;
+}
+
+td {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+}
