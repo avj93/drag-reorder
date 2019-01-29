@@ -28,7 +28,7 @@ const List = (props) => {
   const { list, provided } = props;
 
   return (
-    <div ref={provided.innerRef} {...provided.droppablePops}>
+    <div ref={provided.innerRef} {...provided.droppablePops} className="listContainer">
       {list.map((item, index) => <ListItem key={item.id} item={item} index={index} />)}
     </div>
   );
@@ -36,6 +36,14 @@ const List = (props) => {
 
 
 export default class Modal extends React.PureComponent {
+  componentWillMount() {
+    document.body.classList.add("noScroll");
+  }
+
+  componentWillUnMount() {
+    document.body.classList.remove("noScroll");
+  }
+
   render() {
     const { list, onCancel, onSubmit } = this.props;
 
