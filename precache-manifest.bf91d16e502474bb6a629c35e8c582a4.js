@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/drag-reorder/static/css/main.05d4dc3b.chunk.css"
   },
   {
-    "revision": "b3cd77e38bd4912df163dd72919da23d",
+    "revision": "81eaf25a9bce3f49d3187117412aff30",
     "url": "/drag-reorder/index.html"
   }
 ];
