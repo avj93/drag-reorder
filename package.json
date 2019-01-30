@@ -13,8 +13,9 @@
     "babel": "^6.2.3"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0",
-    "babel-preset-env":  "^1.5.1"
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "babel-preset-env": "^1.5.1",
+    "gh-pages": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
